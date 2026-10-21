@@ -23,6 +23,16 @@ Every spring, a WA DNR Wildfire Division resource coordinator (our persona, "Dan
 
 All insight is **deterministic** (counts, math, and comparisons). There is no runtime AI in the analysis.
 
+## Built with Kiro
+
+Fire-Watch was built at the Seattle Kiro Buildathon with [Kiro](https://kiro.dev), an agentic IDE built around spec-driven development.
+
+1. **Spec first.** We wrote one detailed build plan (`PLAN.md`) and gave it to Kiro as the spec. It covers the persona, data sources, normalization rules, analysis definitions, website layout, file structure, 2-hour timeline, demo script, risks, and a verification checklist.
+2. **Kiro builds.** Kiro turned the plan into the data scripts and the static website.
+3. **We verify.** The plan's checklist is how we check the result: fire counts match DNR's numbers, allocation percentages sum to 100, and every tab and picker path works without console errors.
+
+The spec also set the ground rules the build had to follow: deterministic insight only (no runtime AI), DNR-protected lands only, and no blame on named individuals.
+
 ## Data sources
 
 | Data | Source | Used for |
